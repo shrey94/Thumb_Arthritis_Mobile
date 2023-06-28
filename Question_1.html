@@ -1,138 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thumb Arthritis App</title>
-  <link rel="stylesheet" href="font-6/css/all.css">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Thumb Arthritis App</title>
+    <link rel="stylesheet" href="font-6/css/all.css">
+    
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <!-- <script src= "main.js"></script>  -->
   
-  <!-- Include Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="mystyle.css">
-  <!-- <script src= "main.js"></script> -->
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    
-    #banner {
-      height: 100px;
-      background-color: #002664;
-    }
-    
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    
-    #Question_1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    #Answers1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .options {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-    
-    #Thumb_icon {
-      padding: 5px;
-      color: #002664;
-    }
-    
-    #Submit_Answer {
-      margin-top: 20px;
-      background: #007DAC;
-      color: white;
-      border: none;
-    }
-    
-    @media (max-width: 768px) {
-      /* Adjust styles for smaller screens */
-      #banner {
-        height: 80px;
-      }
-      
-      .container {
-        padding: 10px;
-      }
-      
-      #Question_1 h1 {
-        font-size: 24px;
-      }
-      
-      .options {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: center;
-      }
-      
-      #Thumb_icon {
-        margin-bottom: 5px;
-      }
-      
-      #Submit_Answer {
-        width: 100%;
-      }
-    }
-  </style>
-</head>
+  </head>
 
-<body>
-  <div id="banner"></div>
-  <div class="container">
-    <div id="Question_1">
-      <h1>Which thumb are you focusing on?</h1>
+  <body>
+
+    <div id= 'banner'>
     </div>
-    <div id="Answers1">
-      <div id="q1a1" class="options">
-        <div id="Thumb_icon">
-          <i class="fa-solid fa-thumbs-up"></i>
-        </div>
-        <div id="q1a1t">Right Thumb</div> 
-        <div id="checkbox_right">
-          <i class="fa-regular fa-circle"></i>
-        </div>
+    <div class = container>
+      <div id = Question_1>
+        <h1>Which thumb are you focusing on ?</h1>
       </div>
-      <div id="q1a2" class="options">
-        <div id="Thumb_icon">
-          <i class="fa-solid fa-thumbs-up fa-flip-horizontal"></i>
+
+        <div id="Answers1">
+          <div id="q1a1" class="options" >
+
+            <div id = 'Thumb_icon'>
+              <i class="fa-solid fa-thumbs-up" style="color:  #002664;padding: 5px;"></i>
+            </div>
+            <div id="q1a1t" >Right Thumb</div> 
+            <div id = "checkbox_right">
+              <i class="fa-regular fa-circle" style="padding: 5px"></i>
+            </div>
+
+          </div>
+          <div id="q1a2" class="options">
+
+            <div id = 'Thumb_icon'>
+              <i class="fa-solid fa-thumbs-up fa-flip-horizontal" style="color:  #002664;padding: 5px;"></i>
+            </div>
+            <div id="q1a2t" >Left Thumb</div> 
+            <div id = "checkbox_left">
+              <i class="fa-regular fa-circle" style="padding: 5px"></i>
+            </div>
+
+          </div>
+          <div id="q1a3" class="options" >
+
+            <div id = 'Thumb_icon'>
+              <i class="fa-solid fa-thumbs-up" style="color:  #002664;"></i>
+              <i class="fa-solid fa-thumbs-up fa-flip-horizontal" style="color:#002664;"></i>
+            </div>
+            
+            <div id="q1a3t" >Both Thumbs</div> 
+            <div id = "checkbox_both">
+              <i class="fa-regular fa-circle" style="padding: 5px"></i>
+            </div>
+
+          </div>
+          <button id = "Submit_Answer" type="button" class="btn btn-secondary btn-lg" onclick="window.location.href = 'Preference_Saved.html';">NEXT</button>
         </div>
-        <div id="q1a2t">Left Thumb</div> 
-        <div id="checkbox_left">
-          <i class="fa-regular fa-circle"></i>
-        </div>
-      </div>
-      <div id="q1a3" class="options">
-        <div id="Thumb_icon">
-          <i class="fa-solid fa-thumbs-up"></i>
-          <i class="fa-solid fa-thumbs-up fa-flip-horizontal"></i>
-        </div>
-        <div id="q1a3t">Both Thumbs</div> 
-        <div id="checkbox_both">
-          <i class="fa-regular fa-circle"></i>
-        </div>
-      </div>
-      <button id="Submit_Answer" type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='Preference_Saved.html';">NEXT</button>
+
+
+      <!-- </div> -->
     </div>
-  </div>
-  
-  <!-- Include Bootstrap JS and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="main_2.js"></script>
-</body>
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src= "main_2.js"></script> 
+  </body>
 </html>
