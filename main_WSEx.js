@@ -5,7 +5,7 @@ var el = document.getElementById('counter_rev');
 
 function incrementSecondsRev() {
   seconds_rev =seconds_rev - 1;
-  el.innerText = "Reps: " + seconds_rev;
+  el.innerText =  "Reps: " + seconds_rev;
   // console.log(seconds);
   if (seconds_rev <1){
     // window.location.href = 'Completion_PFE_Page.html';
