@@ -4,6 +4,8 @@
 var submitbtn = document.getElementById('Submit_Answer');
 var x = document.getElementsByClassName('options');
 var count_ed = 0;
+// var count_ed2 = 0;
+
 var count_ec1 = 0;
 var count_ec2 = 0;
 var count_ec3 = 0;
@@ -36,7 +38,7 @@ document.getElementById('Submit_Answer').addEventListener('click',function(){
     
     var selectedEl = document.querySelector(".selected");
     if(selectedEl){
-        alert(selectedEl.innerText); 
+        alert("You have selected" + selectedEl.innerText); 
         // document.body.style.backgroundColor = 'blue';
     }
     else{
@@ -49,22 +51,52 @@ document.getElementById('Submit_Answer').addEventListener('click',function(){
 function exercisedifficult(id){
     count_ed = count_ed+1
     var div_select = document.getElementById(id);
-    if (count_ed%2!=0){
-        div_select.classList.add("difficult");
-        // var checkbox = (div_select.childNodes[5]);
-        // (checkbox.remove());
-        ($('#'+id).find('i').removeClass());
-        ($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-        // console.log($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
+    console.log(id);
+    console.log(div_select.id);
+    if (div_select.id =='exercise_easy_selection'){
+        // if (count_ed%2!=0){
+            div_select.classList.add("difficult");
+            // var checkbox = (div_select.childNodes[5]);
+            // (checkbox.remove());
+            ($('#'+id).find('i').removeClass());
+            ($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
+            document.getElementById('exercise_difficult_selection').classList.remove('difficult');
+            console.log($('#'+'exercise_difficult_selection').find('i').removeClass());
+            // console.log($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
 
-        
+            
+        // }
+
+        // else if (count_ed%2==0) {
+        //     div_select.classList.remove("difficult");
+            
+        //     ($('#'+id).find('i').addClass('fa-regular fa-circle'));
+
+
+        // }
     }
-    else if (count_ed%2==0) {
-        div_select.classList.remove("difficult");
-        // console.log($('#'+id).find('i').removeClass();
-        ($('#'+id).find('i').addClass('fa-regular fa-circle'));
+    else if (div_select.id =='exercise_difficult_selection'){
+        // if (count_ed%2!=0){
+            div_select.classList.add("difficult");
+            // var checkbox = (div_select.childNodes[5]);
+            // (checkbox.remove());
+            ($('#'+id).find('i').removeClass());
+            ($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
+            document.getElementById('exercise_easy_selection').classList.remove('difficult');
+            console.log($('#'+'exercise_easy_selection').find('i').removeClass());
+            // ($(document.getElementById('exercise_easy_selection')).find('i').removeClass();
+            // console.log($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
+
+            
+        // }
+
+        // else if (count_ed%2==0) {
+        //     div_select.classList.remove("difficult");
+            
+        //     ($('#'+id).find('i').addClass('fa-regular fa-circle'));
 
 
+        // }
     }
 
 
