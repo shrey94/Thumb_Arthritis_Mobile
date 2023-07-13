@@ -17,6 +17,18 @@ function incrementSecondsRev() {
 
       window.location.href = 'Completion_WEx_1_Page.html';
     }
+    if (page_index =='Wrist_Strengthening_Exercise_2.html'){
+
+      window.location.href = 'Completion_WEx_2_Page.html';
+    }
+    if (page_index =='Wrist_Strengthening_Exercise_3.html'){
+
+      window.location.href = 'Completion_WEx_3_Page.html';
+    }
+    if (page_index =='Wrist_Strengthening_Exercise_4.html'){
+
+      window.location.href = 'Completion_WEx_4_Page.html';
+    }
     console.log("Done");
     clearInterval(timer_rev);
   }
