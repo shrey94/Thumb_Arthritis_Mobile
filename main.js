@@ -14,7 +14,7 @@ function incrementSeconds() {
     clearInterval(timer);
   }
 }
-var timer = setInterval(incrementSeconds, 2500);
+var timer = setInterval(incrementSeconds, 2800);
 
 // if (ispaused==false){
 //     setInterval(incrementSeconds, 2500);
@@ -70,7 +70,7 @@ PB.onclick = function(){
 span.onclick = function() {
   modal.style.display = "none";
   pfe_video.load();
-  timer = setInterval(incrementSeconds, 2500);
+  timer = setInterval(incrementSeconds, 2800);
   console.log(event);
 
   // ispaused=false;
@@ -80,7 +80,7 @@ span.onclick = function() {
 cont_exercise.onclick = function() {
   modal.style.display = "none";
   pfe_video.load();
-  timer = setInterval(incrementSeconds, 2500);
+  timer = setInterval(incrementSeconds, 2800);
   console.log(event);
 
   // ispaused=false;
@@ -92,7 +92,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     pfe_video.load();
-    timer = setInterval(incrementSeconds, 2500);
+    timer = setInterval(incrementSeconds, 2800);
     // ispaused=false;
     console.log(seconds);
   }
