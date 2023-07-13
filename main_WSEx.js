@@ -1,14 +1,22 @@
 //REPS FOR EXERCISES
-var seconds_rev = 11;
+var seconds_rev = 31;
 var el = document.getElementById('counter_rev');
+console.log(document.getElementById('Exercise_video_TEE').childNodes[1]);
 // var ispaused = false;
 
 function incrementSecondsRev() {
   seconds_rev =seconds_rev - 1;
-  el.innerText =  "Reps: " + seconds_rev;
+  el.innerText =  "Timer: " + seconds_rev;
   // console.log(seconds);
   if (seconds_rev <1){
     // window.location.href = 'Completion_PFE_Page.html';
+    var page_name_array = ((window.location.href).split('/'));
+    var page_index = (page_name_array[page_name_array.length-1]);
+    console.log(page_index);
+    if (page_index =='Wrist_Strengthening_Exercise_1.html'){
+
+      window.location.href = 'Completion_WEx_1_Page.html';
+    }
     console.log("Done");
     clearInterval(timer_rev);
   }
@@ -19,7 +27,10 @@ var timer_rev = setInterval(incrementSecondsRev, 1000);
 //     setInterval(incrementSeconds, 2500);
 // }
 //MODAL HIDE SHOW
-var wrist_image = document.getElementById('wrist-ISO-video');
+var wrist_image = document.getElementById('Exercise_video_TEE').childNodes[1];
+console.log(wrist_image);
+
+
 
 
 var modal = document.getElementById("myModal");
