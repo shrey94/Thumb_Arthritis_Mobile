@@ -38,7 +38,7 @@ document.getElementById('Submit_Answer').addEventListener('click',function(){
     
     var selectedEl = document.querySelector(".selected");
     if(selectedEl){
-        alert("You have selected" + selectedEl.innerText); 
+        alert("You have selected " + selectedEl.innerText); 
         // document.body.style.backgroundColor = 'blue';
     }
     else{
