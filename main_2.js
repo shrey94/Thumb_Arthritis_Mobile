@@ -109,6 +109,10 @@ function Exercise_option(id){
         if (page_name_array[0]=='PFE'){
             window.location.href = 'Pointer_Finger_Exercise_Easy.html'
         }
+        else{
+            window.location.href = 'Wrist_Strengthening_Exercise_1.html'
+
+        }
 
     }
     else if (exercise_difficulty_option[0]=='exercise_difficult_selection'){
@@ -126,119 +130,7 @@ function Exercise_option(id){
 
 
 
-function exerciseselectioncomplete1(id){
-    count_ec1 = count_ec1+1
-    var div_select = document.getElementById(id);
-    if (count_ec1%2!=0){
-        console.log(document.getElementById(id).style.backgroundColor ='#002664');
-        console.log(document.getElementById(id).style.color ='#FCD901');
 
-        // div_select.classList.add("complete");
-        // var checkbox = (div_select.childNodes[5]);
-        // (checkbox.remove());
-        ($('#'+id).find('i').removeClass());
-        ($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-        // console.log($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-
-        
-    }
-    else if (count_ec1%2==0) {
-        console.log(document.getElementById(id).style.backgroundColor ='#FCD901');
-        console.log(document.getElementById(id).style.color ='#002664');
-        // console.log($('#'+id).find('i').removeClass();
-        ($('#'+id).find('i').addClass('fa-regular fa-circle'));
-
-
-    }
-
-};
-
-function exerciseselectioncomplete2(id){
-    count_ec2 = count_ec2+1
-    var div_select = document.getElementById(id);
-    if (count_ec2%2!=0){
-        console.log(document.getElementById(id).style.backgroundColor ='#002664');
-        console.log(document.getElementById(id).style.color ='#FCD901');
-
-        // div_select.classList.add("complete");
-        // var checkbox = (div_select.childNodes[5]);
-        // (checkbox.remove());
-        ($('#'+id).find('i').removeClass());
-        ($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-        // console.log($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-
-        
-    }
-    else if (count_ec2%2==0) {
-        console.log(document.getElementById(id).style.backgroundColor ='#FCD901');
-        console.log(document.getElementById(id).style.color ='#002664');
-        // console.log($('#'+id).find('i').removeClass();
-        ($('#'+id).find('i').addClass('fa-regular fa-circle'));
-
-
-    }
-
-
-
-
-
-};
-
-function exerciseselectioncomplete3(id){
-    count_ec3 = count_ec3+1
-    var div_select = document.getElementById(id);
-    if (count_ec3%2!=0){
-        console.log(document.getElementById(id).style.backgroundColor ='#002664');
-        console.log(document.getElementById(id).style.color ='#FCD901');
-
-        // div_select.classList.add("complete");
-        // var checkbox = (div_select.childNodes[5]);
-        // (checkbox.remove());
-        ($('#'+id).find('i').removeClass());
-        ($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-        // console.log($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-
-        
-    }
-    else if (count_ec3%2==0) {
-        console.log(document.getElementById(id).style.backgroundColor ='#FCD901');
-        console.log(document.getElementById(id).style.color ='#002664');
-        // console.log($('#'+id).find('i').removeClass();
-        ($('#'+id).find('i').addClass('fa-regular fa-circle'));
-
-
-    }
-
-};
-
-function exerciseselectioncomplete4(id){
-    count_ec4 = count_ec4+1
-    var div_select = document.getElementById(id);
-    if (count_ec4%2!=0){
-        console.log(document.getElementById(id).style.backgroundColor ='#002664');
-        console.log(document.getElementById(id).style.color ='#FCD901');
-
-        // div_select.classList.add("complete");
-        // var checkbox = (div_select.childNodes[5]);
-        // (checkbox.remove());
-        ($('#'+id).find('i').removeClass());
-        ($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-        // console.log($('#'+id).find('i').addClass('fa-regular fa-circle-check'));
-
-        
-    }
-    else if (count_ec4%2==0) {
-        console.log(document.getElementById(id).style.backgroundColor ='#FCD901');
-        console.log(document.getElementById(id).style.color ='#002664');
-        // console.log($('#'+id).find('i').removeClass();
-        ($('#'+id).find('i').addClass('fa-regular fa-circle'));
-
-
-    }
-
-
-
-};
 
 
 
