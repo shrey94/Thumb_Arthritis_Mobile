@@ -7,14 +7,14 @@ var el = document.getElementById('counter');
 
 function incrementSeconds() {
   seconds += 1;
-  el.innerText = "Reps: " + seconds + " /10";
+  el.innerText = "Reps: " + seconds + " /30";
   // console.log(seconds);
-  if (seconds >9.5){
+  if (seconds >29.5){
     window.location.href = 'Completion_PFE_Page.html';
     clearInterval(timer);
   }
 }
-var timer = setInterval(incrementSeconds, 2600);
+var timer = setInterval(incrementSeconds, 2400);
 
 // if (ispaused==false){
 //     setInterval(incrementSeconds, 2500);
@@ -70,7 +70,7 @@ PB.onclick = function(){
 span.onclick = function() {
   modal.style.display = "none";
   pfe_video.load();
-  timer = setInterval(incrementSeconds, 2600);
+  timer = setInterval(incrementSeconds, 2400);
   console.log(event);
 
   // ispaused=false;
@@ -80,7 +80,7 @@ span.onclick = function() {
 cont_exercise.onclick = function() {
   modal.style.display = "none";
   pfe_video.load();
-  timer = setInterval(incrementSeconds, 2600);
+  timer = setInterval(incrementSeconds, 2400);
   console.log(event);
 
   // ispaused=false;
@@ -92,7 +92,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     pfe_video.load();
-    timer = setInterval(incrementSeconds, 2600);
+    timer = setInterval(incrementSeconds, 2400);
     // ispaused=false;
     console.log(seconds);
   }
